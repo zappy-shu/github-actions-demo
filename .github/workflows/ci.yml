@@ -26,3 +26,4 @@ jobs:
         repository: zappyshu/github-actions
         tag_with_ref: true
         add_git_labels: true
+        push: ${{ startsWith(github.ref, 'refs/tags/') }}
